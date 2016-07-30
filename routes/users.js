@@ -6,7 +6,6 @@ var async = require('async');
 
 // my listen
 router.get('/info', isLoggedIn, function(req, res) {
-    console.log(req.user);
     res.render('users/info',{user:req.user});
 });
 // new

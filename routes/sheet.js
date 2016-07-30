@@ -6,7 +6,6 @@ var async = require('async');
 
 
 router.get('/new', isLoggedIn, function(req, res) {
-    console.log(req.user);
     res.render('sheets/new',{user:req.user});
 });
 module.exports = router;

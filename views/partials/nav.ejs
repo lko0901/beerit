@@ -5,28 +5,61 @@
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <a href="/signout" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-sign-out"></i></a>
         <li class="sidebar-brand">
-            <a href="/users/info"><%= user.nickname %><span><%= user.email %></span></a>
+            <a href="/users/info">
+                <%= user.nickname %><span><%= user.email %></span></a>
         </li>
         <li>
-            <a href="/sheets/new" >New Sheet</a>
+            <a href="/sheets/new">New Sheet</a>
         </li>
         <li>
-            <a href="javascript:void(0);" onclick=$("#menu-close").click();>Find</a>
+            <a href="javascript:void(0);" onclick=$( "#menu-close").click();>Find</a>
         </li>
         <li>
-            <a href="javascript:void(0);" onclick=$("#menu-close").click();>About</a>
+            <a href="javascript:void(0);" onclick=$( "#menu-close").click();>About</a>
         </li>
         <li>
-            <a href="javascript:void(0);" onclick=$("#menu-close").click();>Contact</a>
+            <a href="javascript:void(0);" onclick=$( "#menu-close").click();>Contact</a>
         </li>
     </ul>
 </nav>
 <header class="row" style="margin-bottom:1.82em;">
-    <div class="col-md-10 col-sm-9">
-      <section id="search">
-        <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></label>
-        <input id="search-input" class="form-control input-lg" placeholder="Search" autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
-        <a id="search-clear" href="#" class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">Clear search</span></a>
-      </section>
+    <div class="col-md-11 col-sm-10 col-xs-10">
+        <section id="search">
+            <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></label>
+            <input id="search-input" class="form-control typeahead input-lg" placeholder="Search" tabindex="1">
+            <a id="search-clear" href="#" class="fa fa-times-circle" aria-hidden="true"><span class="sr-only">Clear search</span></a>
+        </section>
     </div>
 </header>
+<script>
+    var brewery = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: '/brewery.json'
+    });
+
+    var bear = new Bloodhound({
+        datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+        queryTokenizer: Bloodhound.tokenizers.whitespace,
+        prefetch: '/beer.json'
+    });
+
+    $('#search .typeahead').typeahead({
+        highlight: true,
+        hint: false
+    }, {
+        name: 'Brewery',
+        display: 'name',
+        source: brewery,
+        templates: {
+            header: '<h3 class="category-name">Brewery</h3>'
+        }
+    }, {
+        name: 'Beer',
+        display: 'name',
+        source: bear,
+        templates: {
+            header: '<h3 class="category-name">Beer</h3>'
+        }
+    });
+</script>
