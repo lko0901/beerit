@@ -1,0 +1,32 @@
+<!-- Navigation -->
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <a href="/signout" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-sign-out"></i></a>
+        <li class="sidebar-brand">
+            <a href="/users/info"><%= user.nickname %><span><%= user.email %></span></a>
+        </li>
+        <li>
+            <a href="/sheets/new" >New Sheet</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick=$("#menu-close").click();>Find</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick=$("#menu-close").click();>About</a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" onclick=$("#menu-close").click();>Contact</a>
+        </li>
+    </ul>
+</nav>
+<header class="row" style="margin-bottom:1.82em;">
+    <div class="col-md-10 col-sm-9">
+      <section id="search">
+        <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></label>
+        <input id="search-input" class="form-control input-lg" placeholder="Search" autocomplete="off" spellcheck="false" autocorrect="off" tabindex="1">
+        <a id="search-clear" href="#" class="fa fa-times-circle hide" aria-hidden="true"><span class="sr-only">Clear search</span></a>
+      </section>
+    </div>
+</header>
