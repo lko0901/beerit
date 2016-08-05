@@ -7,6 +7,13 @@
 
 ## 라이센스
 
+CDDL
+Common Development and Distribution License
+CDDL 영문 [Link](https://opensource.org/licenses/cddl1.php "CDDL")
+CDDL 한글 [Link](https://www.olis.or.kr/ossw/license/license/detail.do?lid=1008&mapcode=010001 "CDDL")
+
+and
+
 ![라이센스](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "CCL")
 이 저작물은 [크리에이티브 커먼즈 저작자표시-비영리-동일조건변경허락 4.0 국제 라이선스](http://creativecommons.org/licenses/by-nc-sa/4.0/) 에 따라 이용할 수 있습니다.
 
