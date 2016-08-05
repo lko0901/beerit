@@ -5,31 +5,18 @@
 ## 목적
 비영리를 목적으로 한국 크래프트 브루어리와 맥주에 대한 정보를 나눕니다.
 
+## 라이센스
+
+![라이센스](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png "CCL")
+이 저작물은 [크리에이티브 커먼즈 저작자표시-비영리-동일조건변경허락 4.0 국제 라이선스](http://creativecommons.org/licenses/by-nc-sa/4.0/) 에 따라 이용할 수 있습니다.
+
 ## Github 사용법
 
 https://github.com/trpgms/beerit
 
 개발 진행의 편의를 위해 github를 사용하려 합니다. 회원으로 가입하시면 자유롭게 이슈를 등록 할 수도 있고 Collaborators로 등록하면 직접 수정도 가능합니다. Collaborators가 아니여도 문서나 소스를 수정하고 제안 할 수 있습니다.
 프로젝트의 첫 화면에 정리된 내용은 README.md 라는 파일입니다. 해당 파일을 수정하고 제안하셔도 됩니다.
-
-### 이슈
-이슈 항목에서 자유롭게 이슈를 올려주세요.
-
-Issue 항목으로 이동하여 New Issue 를 누릅니다.
-![이슈이동](https://s3.ap-northeast-2.amazonaws.com/devbearimg/issue0.png "이슈")
-
-제목과 내용을 적어주시면 됩니다. 그리고 마지막에 Submit new issue 버튼으로 마무리~
-![이슈등록](https://s3.ap-northeast-2.amazonaws.com/devbearimg/issue1.png "이슈")
-
-등록된 이슈에 대한 분류와 정리는 권한이 있는 분이 읽고 수정하겠습니다.
-
-첫화면에 나오는 정리는 README.md 파일입니다. 수정을 제안하시려면 아래와 같이 해주세요.
-![README](https://s3.ap-northeast-2.amazonaws.com/devbearimg/main0.png "README")
-![README](https://s3.ap-northeast-2.amazonaws.com/devbearimg/main1.png "README")
-![README](https://s3.ap-northeast-2.amazonaws.com/devbearimg/main2.png "README")
-![README](https://s3.ap-northeast-2.amazonaws.com/devbearimg/main3.png "README")
-![README](https://s3.ap-northeast-2.amazonaws.com/devbearimg/main4.png "README")
-
+wiki 부분을 통해 정리해주셔도 됩니다.
 
 ## 기능
 
